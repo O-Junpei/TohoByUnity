@@ -30,26 +30,92 @@ public class Player : MonoBehaviour {
 			GetComponent<SpriteRenderer>().sprite = walk[animIndex];
 		}
 
+
 		//マウスをクリックしたら歩き出す
-		if (Input.GetButton("Fire1"))
+		// Up
+		if (Input.GetKey("up"))
 		{
 			walkCheck = true;
-			GetComponent<Rigidbody2D>().velocity =
-				new Vector2(speed, GetComponent<Rigidbody2D>().velocity.y);
+
+			Vector2 v;
+			v.x = 0;
+			v.y = speed;
+
+			//GetComponent<Rigidbody2D>().velocity = new Vector2(speed, GetComponent<Rigidbody2D>().velocity.x);
+			GetComponent<Rigidbody2D>().velocity = v;
+
 		}
 		//マウスのクリックを離すと止まる
-		else if (Input.GetButtonUp("Fire1") && walkCheck)
+		else if (Input.GetKeyUp("up") && walkCheck)
 		{
 			walkCheck = false;
 			GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 		}
+
+		// Down
+		else if (Input.GetKey("down"))
+		{
+			Vector2 v;
+			v.x = 0;
+			v.y = -speed;
+
+			walkCheck = true;
+			GetComponent<Rigidbody2D> ().velocity = v;
+
+
+		}
+		//マウスのクリックを離すと止まる
+		else if (Input.GetKeyUp("down") && walkCheck)
+		{
+			walkCheck = false;
+			GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+		}
+
+		// Right
+		else if (Input.GetKey("right"))
+		{
+			Vector2 v;
+			v.x = speed;
+			v.y = 0;
+
+			walkCheck = true;
+			GetComponent<Rigidbody2D> ().velocity = v;
+
+
+		}
+		//マウスのクリックを離すと止まる
+		else if (Input.GetKeyUp("right") && walkCheck)
+		{
+			walkCheck = false;
+			GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+		}
+
+		// Left
+		else if (Input.GetKey("left"))
+		{
+			Vector2 v;
+			v.x = -speed;
+			v.y = 0;
+
+			walkCheck = true;
+			GetComponent<Rigidbody2D> ().velocity = v;
+
+
+		}
+		//マウスのクリックを離すと止まる
+		else if (Input.GetKeyUp("left") && walkCheck)
+		{
+			walkCheck = false;
+			GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+		}
+
 	}
 
 	// テキスト表示
 	void OnGUI()
 	{
 		// 説明テキスト
-		GUI.TextField(new Rect(5, 5, 400, 40), "ゲーム画面上でマウスの左ボタンを押し続けてる間は歩く。ボタンを離すと止まる。");
+		GUI.TextField(new Rect(5, 5, 400, 40), "toho by Unity。");
 		// リセットボタン
 		if (GUI.Button(new Rect(5, 50, 110, 30), "リセットボタン"))
 		{
