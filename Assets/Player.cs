@@ -70,6 +70,8 @@ public class Player : MonoBehaviour {
 		GetComponent<Rigidbody2D> ().velocity = v;
 	}
 
+	/*
+
 	// テキスト表示
 	void OnGUI()
 	{
@@ -78,7 +80,7 @@ public class Player : MonoBehaviour {
 		// リセットボタン
 		if (GUI.Button(new Rect(5, 50, 110, 30), "リセットボタン"))
 		{
-			Application.LoadLevel(Application.loadedLevelName);
+			//Application.LoadLevel(Application.loadedLevelName);
 		}
-	}
+	}*/
 }
