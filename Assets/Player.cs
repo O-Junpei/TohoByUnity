@@ -16,7 +16,8 @@ public class Player : MonoBehaviour {
 		animIndex = 0;
 		walkCheck = false;
 	}
-	
+
+
 	// Update is called once per frame
 	void Update () {
 		//歩いていたら歩くアニメーションの再生
@@ -30,85 +31,43 @@ public class Player : MonoBehaviour {
 			GetComponent<SpriteRenderer>().sprite = walk[animIndex];
 		}
 
+		//動く判定
+		int isUp = 0;
+		int isDown = 0;
+		int isRight = 0;
+		int isLeft = 0;
 
-		//マウスをクリックしたら歩き出す
-		// Up
-		if (Input.GetKey("up"))
-		{
+		if (Input.GetKey ("up")) {
+			isUp = 1;
+		}
+		if (Input.GetKey ("down")) {
+			isDown = 1;
+		}
+		if (Input.GetKey ("right")) {
+			isRight = 1;
+		}
+		if (Input.GetKey ("left")) {
+			isLeft = 1;
+		}
+		if (isUp == 1 || isDown == 1 || isRight == 1 || isLeft == 1) {
 			walkCheck = true;
-
-			Vector2 v;
-			v.x = 0;
-			v.y = speed;
-
-			//GetComponent<Rigidbody2D>().velocity = new Vector2(speed, GetComponent<Rigidbody2D>().velocity.x);
-			GetComponent<Rigidbody2D>().velocity = v;
-
-		}
-		//マウスのクリックを離すと止まる
-		else if (Input.GetKeyUp("up") && walkCheck)
-		{
+		} else {
 			walkCheck = false;
-			GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 		}
+		moveChara (isUp,isDown,isRight,isLeft);
 
-		// Down
-		else if (Input.GetKey("down"))
-		{
-			Vector2 v;
-			v.x = 0;
-			v.y = -speed;
+	}
 
-			walkCheck = true;
-			GetComponent<Rigidbody2D> ().velocity = v;
+	//受け取った値によってキャラを動かすかどうか
+	void moveChara(int isUp,int isDown,int isRight,int isLeft){
 
+		Vector2 v;
+		v.y = speed * (isUp-isDown);
+		//v.y = -speed * isDown;
+		v.x = speed * (isRight-isLeft);
+		//v.x = -speed * isLeft;
 
-		}
-		//マウスのクリックを離すと止まる
-		else if (Input.GetKeyUp("down") && walkCheck)
-		{
-			walkCheck = false;
-			GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-		}
-
-		// Right
-		else if (Input.GetKey("right"))
-		{
-			Vector2 v;
-			v.x = speed;
-			v.y = 0;
-
-			walkCheck = true;
-			GetComponent<Rigidbody2D> ().velocity = v;
-
-
-		}
-		//マウスのクリックを離すと止まる
-		else if (Input.GetKeyUp("right") && walkCheck)
-		{
-			walkCheck = false;
-			GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-		}
-
-		// Left
-		else if (Input.GetKey("left"))
-		{
-			Vector2 v;
-			v.x = -speed;
-			v.y = 0;
-
-			walkCheck = true;
-			GetComponent<Rigidbody2D> ().velocity = v;
-
-
-		}
-		//マウスのクリックを離すと止まる
-		else if (Input.GetKeyUp("left") && walkCheck)
-		{
-			walkCheck = false;
-			GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-		}
-
+		GetComponent<Rigidbody2D> ().velocity = v;
 	}
 
 	// テキスト表示
