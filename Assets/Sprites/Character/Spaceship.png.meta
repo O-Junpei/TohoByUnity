@@ -1,33 +1,27 @@
 fileFormatVersion: 2
-guid: 35ca9178057d34fabb980be6b3d8618b
-timeCreated: 1489311331
+guid: ce16e85876e454f7b8d23ea848c7c5f0
+timeCreated: 1493484242
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: marisa_0
-    21300002: marisa_1
-    21300004: marisa_2
-    21300006: marisa_3
-    21300008: marisa_4
-    21300010: marisa_5
-    21300012: marisa_6
-    21300014: marisa_7
-    21300016: marisa_8
-    21300018: marisa_9
-    21300020: marisa_10
-    21300022: marisa_11
-    21300024: marisa_12
-    21300026: marisa_13
-    21300028: marisa_14
-    21300030: marisa_15
-    21300032: marisa_16
-    21300034: marisa_17
-    21300036: marisa_18
-    21300038: marisa_19
-    21300040: marisa_20
-    21300042: marisa_21
-    21300044: marisa_22
-    21300046: marisa_23
+    21300000: Spaceship_0
+    21300002: Spaceship_1
+    21300004: Spaceship_2
+    21300006: Spaceship_3
+    21300008: Spaceship_4
+    21300010: Spaceship_5
+    21300012: Spaceship_6
+    21300014: Spaceship_7
+    21300016: Spaceship_8
+    21300018: Spaceship_9
+    21300020: Spaceship_10
+    21300022: Spaceship_11
+    21300024: Spaceship_12
+    21300026: Spaceship_13
+    21300028: Spaceship_14
+    21300030: Spaceship_15
+    21300032: Spaceship_16
+    21300034: Spaceship_17
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -118,12 +112,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: marisa_0
+      name: Spaceship_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
-        width: 32
+        y: 120
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -131,12 +125,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: marisa_1
+      name: Spaceship_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
+        x: 48
+        y: 120
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -144,25 +138,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: marisa_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: marisa_3
+      name: Spaceship_2
       rect:
         serializedVersion: 2
         x: 96
-        y: 96
-        width: 32
+        y: 120
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -170,12 +151,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: marisa_4
+      name: Spaceship_3
       rect:
         serializedVersion: 2
-        x: 128
-        y: 96
-        width: 32
+        x: 144
+        y: 120
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -183,25 +164,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: marisa_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 96
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: marisa_6
+      name: Spaceship_4
       rect:
         serializedVersion: 2
         x: 192
-        y: 96
-        width: 32
+        y: 120
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -209,12 +177,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: marisa_7
+      name: Spaceship_5
       rect:
         serializedVersion: 2
-        x: 224
-        y: 96
-        width: 32
+        x: 240
+        y: 120
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -222,12 +190,38 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: marisa_8
+      name: Spaceship_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 120
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spaceship_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 120
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spaceship_8
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
-        width: 32
+        y: 72
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -235,12 +229,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: marisa_9
+      name: Spaceship_9
       rect:
         serializedVersion: 2
-        x: 32
-        y: 48
-        width: 32
+        x: 48
+        y: 72
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -248,25 +242,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: marisa_10
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 48
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: marisa_11
+      name: Spaceship_10
       rect:
         serializedVersion: 2
         x: 96
-        y: 48
-        width: 32
+        y: 72
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -274,12 +255,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: marisa_12
+      name: Spaceship_11
       rect:
         serializedVersion: 2
-        x: 128
-        y: 48
-        width: 32
+        x: 144
+        y: 72
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -287,25 +268,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: marisa_13
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 48
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: marisa_14
+      name: Spaceship_12
       rect:
         serializedVersion: 2
         x: 192
-        y: 48
-        width: 32
+        y: 72
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -313,12 +281,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: marisa_15
+      name: Spaceship_13
       rect:
         serializedVersion: 2
-        x: 224
-        y: 48
-        width: 32
+        x: 240
+        y: 72
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -326,12 +294,38 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: marisa_16
+      name: Spaceship_14
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 72
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spaceship_15
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 72
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spaceship_16
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 32
+        y: 24
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -339,90 +333,12 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: marisa_17
+      name: Spaceship_17
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: marisa_18
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: marisa_19
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: marisa_20
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: marisa_21
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: marisa_22
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: marisa_23
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
+        x: 48
+        y: 24
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
