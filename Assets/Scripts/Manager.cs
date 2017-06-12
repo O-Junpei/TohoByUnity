@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Manager : MonoBehaviour {
-
+public class Manager : MonoBehaviour
+{
 	// Playerプレハブ
 	public GameObject player;
 
@@ -33,6 +33,9 @@ public class Manager : MonoBehaviour {
 
 	public void GameOver ()
 	{
+		// ハイスコアの保存
+		FindObjectOfType<Score>().Save();
+
 		// ゲームオーバー時に、タイトルを表示する
 		title.SetActive (true);
 	}
