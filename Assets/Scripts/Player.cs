@@ -26,6 +26,7 @@ public class Player : MonoBehaviour
 
 	void Update ()
 	{
+
 		// 右・左
 		float x = Input.GetAxisRaw ("Horizontal");
 
@@ -59,8 +60,14 @@ public class Player : MonoBehaviour
 		pos.x = Mathf.Clamp (pos.x, min.x, max.x);
 		pos.y = Mathf.Clamp (pos.y, min.y, max.y);
 
+		var touchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		// プレイヤーの座標を取得
+		Vector2 pos2 = transform.position;
+		pos2.x = touchPos.x;
+		pos2.y = touchPos.y;
+
 		// 制限をかけた値をプレイヤーの位置とする
-		transform.position = pos;
+		transform.position = pos2;
 	}
 
 	// ぶつかった瞬間に呼び出される
